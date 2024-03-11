@@ -1,0 +1,52 @@
+.navbar{
+    background-color:  rgba(10, 22, 35, 0.915);
+    color: white;
+    border-radius: 5px;
+    height: 70px;
+}
+.navbar-brand{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+   
+ }
+.navbar-icon{
+    color: rgb(20, 163, 20);
+    
+}
+
+.cart{
+    font-size: 1rem;
+    color: black;
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
+    
+    
+}
+#cart_count{
+  background-color:  rgb(20, 163, 20);
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bolder;
+  font-size: 10px;
+  margin-right: 2px;
+
+}
+.search{
+    margin-top: 2px;
+    display: flex;
+    margin-left: 200px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    
+    
+}
+.btn{
+    height: 40px;
+    border-radius: 5px;
+    width: 80px;
+}

@@ -11,7 +11,7 @@ const Details=({cartitem,setCartitem})=>{
     const {id}=useParams()
     
 useEffect(()=>{
-    axios.get('http://localhost:3001/product/'+ id)
+    axios.get(`${process.env.React_App_Backend_url}/product/`+ id)
     .then((res)=>{setProducts(res.data.product)
         console.log(res.data)})
     .catch((err)=>console.log(err))

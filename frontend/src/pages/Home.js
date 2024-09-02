@@ -10,7 +10,7 @@ const Home=()=>{
     const [searchparams,setSearchparams]=useSearchParams()
 
     useEffect(()=>{
-        axios.get('http://localhost:3001/products?'+searchparams)
+        axios.get(`${process.env.React_App_Backend_url}/products?`+searchparams)
         .then((res)=>{setProducts(res.data.Products)
             console.log(res.data)})
         .catch((err)=>console.log(err))

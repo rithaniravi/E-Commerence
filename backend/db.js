@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
 connectDatabase=()=>{
-    mongoose.connect("mongodb+srv://rithaniravi:Rithani2095@clusterbackend.rpda541.mongodb.net/mini-ecommerce")
+    mongoose.connect(process.env.MONGO_URI)
     .then(()=>{
         console.log("DataBase connected")
 })

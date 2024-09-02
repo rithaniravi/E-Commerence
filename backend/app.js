@@ -8,6 +8,7 @@ const products=require('./routers/product')
 const orders=require("./routers/order")
 const connectDatabase=require('../backend/config/db')
 
+
 connectDatabase();
 
 app.use(cors())

@@ -8,10 +8,13 @@ const products=require('./routers/product')
 const orders=require("./routers/order")
 const connectDatabase=require('./db')
 
-dotenv.config()
+dotenv.config();
 connectDatabase();
 
-app.use(cors())
+app.use(cors({
+    origin:["https://e-commerencefrontend.onrender.com"],
+    credentials:true
+}))
 app.use(express.json())
 
 app.use('/',products)

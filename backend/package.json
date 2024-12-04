@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "seeder":"node seed/seeder.js"
+    "start": "node index.js",
+    "seeder": "node seed/seeder.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.4",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "react-dotenv": "^0.1.3"
   }
 }

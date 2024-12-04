@@ -21,7 +21,7 @@ const Cart=({cartitem,setCartitem})=>{
     }
 
     const Orderplaced=()=>{
-        axios.post('http://localhost:3001/order',cartitem)
+        axios.post(`${process.env.React_App_Backend_url}/order`,cartitem)
         .then((res)=>console.log(res.data.product))
         .catch((err)=>console.log(err))
         .then(()=>{
